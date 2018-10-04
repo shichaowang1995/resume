@@ -133,7 +133,7 @@
       text-align: center;
     }
 
-    .fix{
+    .fix .name{
       display: none;
     }
   }
