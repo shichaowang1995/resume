@@ -1,0 +1,139 @@
+  body {
+    max-width: 1000px;
+    margin: 100px auto;
+    line-height: 24px;
+    font: 16px Helvetica, Sans-Serif;
+    font-family: 'Comfortaa', cursive;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  header div {
+    padding: 10px 30px;
+  }
+
+  #title {
+    position: relative;
+    width: 100% height:auto;
+  }
+
+  #title img {
+    width: 100%;
+    height: auto;
+  }
+
+  #title span {
+    position: absolute;
+    top: 500px;
+    left: 12%;
+    color: white;
+  }
+
+  .name {
+    font-size: 100px;
+    text-align: center;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .column {
+    padding: 20px;
+  }
+
+  /*a column class which also have an additional class side*/
+  .column.side {
+    flex: 1;
+  }
+
+  .column.middle {
+    flex: 2;
+  }
+
+  .spin {
+    margin-right: 20px;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-timing-function: linear;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  h1 {
+    color: rgb(255, 86, 0);
+    margin: 50px 0 20px 0;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+  }
+
+  h2 {
+    color: rgb(251, 152, 0);
+  }
+
+  a:hover {
+    color: rgb(135, 167, 101);
+    border-bottom: 1px solid;
+  }
+
+  a {
+    color: black;
+    border-bottom: 1px dotted;
+    text-decoration: none;
+  }
+
+  .image img {
+    width: 100%;
+  }
+
+  .fix {
+    position: fixed;
+    left: 20px;
+    top: 300px;
+  }
+
+  .fix li {
+    background-color: rgb(135, 167, 101);
+    padding: 5px 5px;
+  }
+
+  .fix li:hover {
+    background-color: white;
+  }
+
+.contact{
+  text-align: center;
+    width: 100%;
+}
+.footer{
+  text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+  /*when view point of device becomes 600px or less*/
+  @media (max-width: 600px) {
+
+    /*change flex direction to column*/
+    .row {
+      flex-direction: column;
+    }
+
+    #title {
+      text-align: center;
+    }
+
+    .fix{
+      display: none;
+    }
+  }
